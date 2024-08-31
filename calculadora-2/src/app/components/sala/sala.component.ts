@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ChatComponent } from "../chat/chat.component";
+import { Chat } from '../../Chat';
 
 @Component({
   selector: 'app-sala',
@@ -9,11 +10,11 @@ import { ChatComponent } from "../chat/chat.component";
   styleUrl: './sala.component.css'
 })
 export class SalaComponent {
-  textBox:string [] = []
-
-
-  onSubmit(msj:string){
-    this.textBox.push(msj)
+  textBox: Chat[] = [];
+  
+  onSubmit(data: {name: string, message: string}) {
+    this.textBox.push(data);
   }
+  
 
 }

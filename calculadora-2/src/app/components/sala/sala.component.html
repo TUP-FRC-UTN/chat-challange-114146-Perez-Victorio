@@ -4,12 +4,13 @@
     <div class="card-body">
       <h5 class="card-title">Conversación</h5>
       @for (txt of textBox; track $index) {
-        <p>- {{txt}} </p>
+        <p> {{txt.name}} </p>
+        <p>- {{txt.message}} </p>
       }
     </div>
   </div>
 </div>
 
 <div class="container mt-5">
-  <app-chat (msjSend)="onSubmit($event)"></app-chat>
+  <app-chat (msjSend)="onSubmit($event)" ></app-chat>
 </div>
