@@ -1,0 +1,16 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-header bg-light text-dark">Sala de Chat</div>
+    <div class="card-body">
+      <h5 class="card-title">Conversación</h5>
+      @for (txt of textBox; track $index) {
+        <p> {{txt.name}} </p>
+        <p>- {{txt.message}} </p>
+      }
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <app-chat (msjSend)="onSubmit($event)" ></app-chat>
+</div>

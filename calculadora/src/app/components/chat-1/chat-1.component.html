@@ -1,0 +1,17 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-header bg-light text-dark">Usuario: Pepe</div>
+    <div class="card-body">
+      <div class="form-group">
+        <label for="mensaje">Mensaje</label>
+        <input
+          class="form-control"
+          name="mensaje"
+          rows="3"
+          [(ngModel)]="textMessage"
+        />
+      </div>
+      <button (click)="saveMsj()" class="btn btn-primary">Guardar</button>
+    </div>
+  </div>
+</div>

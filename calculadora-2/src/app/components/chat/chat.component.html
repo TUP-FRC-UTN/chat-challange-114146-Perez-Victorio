@@ -1,0 +1,30 @@
+<div class="container mt-5">
+  <div class="row">
+    <!-- Primer Chat -->
+    <div class="col-md-6">
+      <div class="card mb-3">
+        <div class="card-header bg-light text-dark">Usuario: María </div>
+        <div class="card-body">
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <input class="form-control" rows="3" [(ngModel)]="textMessage" />
+            </div>
+            <button type="button" class="btn btn-primary" (click)="saveMsj()">Guardar</button>
+          </div>
+      </div>
+    </div>
+    <!-- Segundo Chat -->
+    <div class="col-md-6">
+      <div class="card mb-3">
+        <div class="card-header bg-light text-dark">Usuario: Pepe </div>
+        <div class="card-body">
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <input class="form-control" rows="3" [(ngModel)]="textMessage2"/>
+            </div>
+            <button type="button" class="btn btn-primary" (click)="saveMsj()">Guardar</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
